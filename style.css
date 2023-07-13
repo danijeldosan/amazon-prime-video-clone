@@ -74,3 +74,33 @@ body {
 .carousel-control-prev {
     width: 5%;
 }
+
+.section-title h2 {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+}
+
+.movie-card-badge {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.movie-card {
+    position: relative;
+}
+
+.infos-container {
+    color: white;
+}
+
+.infos-container h6 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.infos-container h6:first-child {
+    color: #8197a4;
+}
