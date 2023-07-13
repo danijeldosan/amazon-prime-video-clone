@@ -63,3 +63,14 @@ body {
 .dropdown-toggle::after {
     color: rgba(242, 244, 246, 0.7);
 }
+
+.carousel-indicators li {
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+}
+
+.carousel-control-next, 
+.carousel-control-prev {
+    width: 5%;
+}
