@@ -88,14 +88,6 @@ body {
     top: 0;
 }
 
-.movie-card {
-    position: relative;
-}
-
-.infos-container {
-    color: white;
-}
-
 .infos-container h6 {
     font-size: 15px;
     font-weight: 700;
@@ -104,3 +96,39 @@ body {
 .infos-container h6:first-child {
     color: #8197a4;
 }
+
+.infos-container p {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    color: #f2f4f6;
+    display: -webkit-box;
+    font-size: 13px;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.movie-card {
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.movie-card:hover {
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+.infos-container {
+    color: white;
+    padding: 24px;
+    position: absolute;
+    z-index: 2;
+    background-image: linear-gradient(rgba(27,37,48,0), #1b2530 48px);
+    transform: translateY(-62px);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.5s;
+}
+
+.movie-card:hover .infos-container {
+    opacity: 1;
+    transform: translateY(-48px);
+  }
